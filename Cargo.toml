@@ -1,0 +1,15 @@
+[package]
+name = "env"
+version = "0.0.1"
+description = "show environment variables"
+readme = "README.md"
+repository = "https://github.com/richardanaya/env"
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+lto = true
+
+[dependencies]
+libw = {version="0"}
